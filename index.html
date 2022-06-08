@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tienda Muebles</title>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <img src="" alt="">
     <header>
-        <h1>Tienda Muebles</h1>
-        <nav>
+        <h1 class="titulo">Tienda <span>Muebles</span></h1>
+    </header>
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
             <a href="./index.html">Inicio</a>
             <a href="./nosotros.html">Nosotros</a>
             <a href="./tienda.html">Tienda</a>
@@ -18,21 +28,26 @@
             <a href="./galeria.html">Galeria</a>
             <a href="./contacto.html">Contacto</a>
         </nav>
-    </header>
+    </div>
     <main>
-        <section>
+        <div class="hero">
+
+        </div>
+        <section class="contenedor categorias">
             <h2>Categorias de Productos</h2>
-            <div>
-                <img src="./img/categoria1.jpg" alt="Imagen de Categorias de Productos">
-                <a href="#">Oficina</a>
-            </div>
-            <div>
-                <img src="./img/categoria2.jpg" alt="Imagen de Categorias de Productos">
-                <a href="#">Hogar</a>
-            </div>
-            <div>
-                <img src="./img/categoria3.jpg" alt="Imagen de Categorias de Productos">
-                <a href="#">Cocina</a>
+            <div class="listado-categorias">
+                <div class="categoria">
+                    <img src="./img/categoria1.jpg" alt="Imagen de Categorias de Productos">
+                    <a href="#">Oficina</a>
+                </div>
+                <div class="categoria">
+                    <img src="./img/categoria2.jpg" alt="Imagen de Categorias de Productos">
+                    <a href="#">Hogar</a>
+                </div>
+                <div class="categoria">
+                    <img src="./img/categoria3.jpg" alt="Imagen de Categorias de Productos">
+                    <a href="#">Cocina</a>
+                </div>
             </div>
         </section>
         <section>
@@ -102,12 +117,31 @@
     <footer>
         <div>
             <h3>Cantegorias</h3>
+            <nav>
+                <a href="#">Cocina</a>
+                <a href="#">Oficina</a>
+                <a href="#">Jardin</a>
+                <a href="#">Cochera</a>
+                <a href="#">Dormitorios</a>
+            </nav>
         </div>
         <div>
             <h3>Sobre Nosotros</h3>
+            <nav>
+                <a href="#">Nuestra Historia</a>
+                <a href="#">Mision, Vision y Valores</a>
+                <a href="#">Carreras</a>
+                <a href="#">Politica de Privacidad</a>
+                <a href="#">Terminos de Servicio</a>
+            </nav>
         </div>
         <div>
             <h3>Soporte</h3>
+            <nav>
+                <a href="#">Preguntas Frecuentes</a>
+                <a href="#">Ayuda en Linea</a>
+                <a href="#">Confianza y Seguridad</a>
+            </nav>
         </div>
         <p>Todos los derechos Reservador, TiendaMuebles</p>
     </footer>
